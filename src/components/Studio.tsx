@@ -2,7 +2,7 @@ export function Studio() {
   return (
     <section className="studio" aria-label="Настроение зала">
       <img
-        src="/images/interior.jpg"
+        src={`${import.meta.env.BASE_URL}images/interior.jpg`}
         alt="Интерьер барбершопа: три кожаных кресла, кирпичная стена и лампы над зеркалами"
       />
       <div className="studio-caption">

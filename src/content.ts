@@ -1,3 +1,5 @@
+const media = (file: string) => `${import.meta.env.BASE_URL}images/${file}`
+
 export type Service = {
   id: string
   name: string
@@ -83,7 +85,7 @@ export const masters: Master[] = [
     role: "Ножницы и классическая форма",
     days: "Вт, ср, сб",
     text: "Оставляет длину сверху и собирает контур так, чтобы утром хватало воды и расчёски. Машинку включает после того, как посмотрит, куда зачёсывается макушка.",
-    image: "/images/cut2.jpg",
+    image: media("cut2.jpg"),
     alt: "Иллюстрация: стрижка ножницами на затылке. Это не портрет мастера.",
   },
   {
@@ -92,7 +94,7 @@ export const masters: Master[] = [
     role: "Машинка и короткие формы",
     days: "Чт, пт, вс",
     text: "Короткие стрижки и плавный переход. Если просите «просто под машинку», уточнит насадку и линию уха — и не снимет всё одной длиной.",
-    image: "/images/work.jpg",
+    image: media("work.jpg"),
     alt: "Иллюстрация: короткая стрижка машинкой. Это не портрет мастера.",
   },
   {
@@ -101,7 +103,7 @@ export const masters: Master[] = [
     role: "Борода и бритьё",
     days: "Ср, чт, сб",
     text: "Кромка бороды идёт по кости лица. Опасную бритву раскрывает при вас. Масло в конце можно взять без отдушки.",
-    image: "/images/cut3.jpg",
+    image: media("cut3.jpg"),
     alt: "Иллюстрация: оформление усов и бороды триммером. Это не портрет мастера.",
   },
   {
@@ -110,7 +112,7 @@ export const masters: Master[] = [
     role: "Детские стрижки",
     days: "Вт, пт, вс",
     text: "Сажает ребёнка в обычное кресло, без отдельной «игровой» комнаты. Объясняет, что будет шуметь, и не торопит, если нужно сделать паузу.",
-    image: "/images/cut5.jpg",
+    image: media("cut5.jpg"),
     alt: "Иллюстрация: детская стрижка машинкой в барбершопе. Это не портрет мастера и не наш гость.",
   },
 ]
@@ -118,42 +120,42 @@ export const masters: Master[] = [
 export const shots: Shot[] = [
   {
     id: "work",
-    src: "/images/work.jpg",
+    src: media("work.jpg"),
     alt: "Короткая мужская стрижка машинкой, виден переход на виске",
     caption: "Машинка, плотный переход",
     className: "shot-tall",
   },
   {
     id: "portrait",
-    src: "/images/portrait.jpg",
+    src: media("portrait.jpg"),
     alt: "Оформление бороды и виска расчёской",
     caption: "Борода и линия виска",
     className: "shot-cell",
   },
   {
     id: "shave",
-    src: "/images/cut3.jpg",
+    src: media("cut3.jpg"),
     alt: "Бритьё бороды триммером у клиента с закрытыми глазами",
     caption: "Контур бороды",
     className: "shot-cell",
   },
   {
     id: "tools",
-    src: "/images/tools.jpg",
+    src: media("tools.jpg"),
     alt: "Текстурная стрижка сверху, мастер держит прядь расчёской",
     caption: "Текстура сверху",
     className: "shot-cell",
   },
   {
     id: "kids",
-    src: "/images/cut5.jpg",
+    src: media("cut5.jpg"),
     alt: "Мастер стрижёт ребёнка машинкой в кресле барбершопа",
     caption: "Детская, без спешки",
     className: "shot-cell",
   },
   {
     id: "nape",
-    src: "/images/cut2.jpg",
+    src: media("cut2.jpg"),
     alt: "Стрижка ножницами на затылке, тёмный интерьер",
     caption: "Затылок ножницами",
     className: "shot-wide",

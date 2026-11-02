@@ -23,7 +23,7 @@ export function Hero() {
         </div>
         <figure className="hero-photo">
           <img
-            src="/images/hero.jpg"
+            src={`${import.meta.env.BASE_URL}images/hero.jpg`}
             alt="Оформление бороды ножницами: клиент в кресле, мастер держит подбородок"
             fetchPriority="high"
           />
